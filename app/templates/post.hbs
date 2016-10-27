@@ -2,3 +2,10 @@
 <h4>By {{model.author}}</h4>
 <p><img src={{model.image}} alt={{model.title}}></p>
 {{post-fulltext post=model}}
+<div class="comments">
+  <ul>
+    {{#each model as |comment|}}
+      {{comment-tile comment=comment}}
+    {{/each}}
+  </ul>
+</div>

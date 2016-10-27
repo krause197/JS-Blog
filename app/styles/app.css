@@ -1,0 +1,21 @@
+
+.tileImage {
+  position: relative;
+  left: 600px;
+  height: 150px;
+  width: 270px;
+  top: -30px;
+}
+
+
+.jumbotron {
+  background: url(http://meetmeunderthelibertytree.com/wp-content/uploads/2013/08/tree-yellow-logo-header-better-trunk-smaller-center.jpg) 100% 100% no-repeat;
+  width: 1500px;
+  height: 500px;
+}
+
+img {
+  position: relative;
+  height: 500px;
+  width: 750px;
+}
