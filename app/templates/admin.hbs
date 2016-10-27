@@ -1,0 +1,10 @@
+<h2>ADMIN PAGE</h2>
+<h4>CREATE, EDIT, AND DELETE POSTS HERE</h4>
+
+<ul>
+  {{#each model as |post|}}
+    {{admin-post-tile post=post edit="edit" destroyPost="destroyPost"}}
+  {{/each}}
+</ul>
+
+{{new-post savePost1="savePost3"}}

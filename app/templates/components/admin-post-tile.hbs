@@ -1,0 +1,15 @@
+<div class="tile">
+  <li>
+    {{#link-to 'post' post.id}}{{post.title}} By {{post.author}}{{/link-to}}
+    {{#if isImageShowing}}
+      <p><img src={{post.image}} alt={{post.title}} {{action 'imageHide'}}></p>
+    {{else}}
+      <button {{action 'imageShow'}}>Show image</button>
+    {{/if}}
+    <div class="fulltext">
+      <p>{{post.text}}</p>
+    </div>
+    {{edit-post post=post edit="edit"}}
+    <button {{action 'delete' post}}>Delete Post</button>
+  </li>
+</div>
